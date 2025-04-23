@@ -3,7 +3,7 @@ import Typed from "typed.js";
 import Gambar from "./assets/Gambar.svg";
 import Navbar from "./Components/Navbar";
 import LogoMeta from "./assets/LogoMeta.svg";
-import status from "./assets/status.png"; 
+import status from "./assets/status.png";
 import post from "./assets/post.png";
 import group from "./assets/group.png";
 
@@ -33,16 +33,16 @@ function App() {
       <Navbar />
 
       <section id="home" className="min-h-screen container mx-auto px-4 py-16 relative z-10 flex flex-col md:flex-row items-center justify-center gap-x-10">
-        <div className="flex-1 justify-center mb-8 md:mb-0 md:order-last relative">
+        <div className="w-full flex justify-center mb-8 md:mb-0 md:order-last relative md:flex-1">
           <div className="absolute inset-0 flex items-center justify-center z-0">
             <div className="absolute w-24 h-24 md:w-48 md:h-48 bg-blue-600 rounded-full mix-blend-multiply filter blur-xl opacity-60 top-4 left-4 md:top-10 md:left-10"></div>
             <div className="absolute w-24 h-24 md:w-48 md:h-48 bg-blue-600 rounded-full mix-blend-multiply filter blur-xl opacity-60 bottom-4 right-4 md:bottom-10 md:right-10"></div>
             <div className="absolute w-24 h-24 md:w-48 md:h-48 bg-cyan-600 rounded-full mix-blend-multiply filter blur-xl opacity-60 bottom-8 left-8 md:bottom-20 md:left-20"></div>
           </div>
-          <img src={Gambar} alt="Gambar Ilustrasi Facebook" className="w-full h-auto md:max-w-md lg:max-w-lg relative z-10" />
+          <img src={Gambar} alt="Gambar Ilustrasi Facebook" className="w-full h-auto max-w-sm md:max-w-md lg:max-w-lg relative z-10" />
         </div>
 
-        <div className="flex-1 flex flex-col items-center md:items-start justify-center text-center md:text-left">
+        <div className="w-full flex flex-col items-center md:items-start justify-center text-center md:text-left md:flex-1">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4 text-gray-900 dark:text-white">
             Connect with friends <br className="hidden md:block" /> and the world around you.
           </h1>
@@ -55,7 +55,7 @@ function App() {
               Get Started Now
             </a>
           </div>
-          <div className="flex flex-row items-center font-medium absolute bottom-4 right-4 ">
+          <div className="flex flex-row items-center font-medium mt-8 md:mt-0 md:absolute md:bottom-4 md:right-4">
             <p className="opacity-50">Supported by</p>
             <img src={LogoMeta} alt="Logo Meta" className=" w-16 h-16 md:w-24 md:h-24" />
           </div>
